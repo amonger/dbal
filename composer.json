@@ -1,5 +1,6 @@
 {
-  "name": "amonger/mysqlmapper",
+  "name": "amonger/dbal",
+  "license": "MIT",
   "authors": [
     {
       "name": "Alan Monger",
