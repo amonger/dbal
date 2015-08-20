@@ -1,0 +1,21 @@
+{
+  "name": "amonger/mysqlmapper",
+  "authors": [
+    {
+      "name": "Alan Monger",
+      "email": "alan@alanmonger.co.uk"
+    }
+  ],
+  "require": {
+    "doctrine/dbal": "^2.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "AMonger\\DBAL\\": "src/"
+    }
+  },
+  "require-dev": {
+    "mockery/mockery": "^0.9.4",
+    "phpunit/phpunit": "^4.8"
+  }
+}
