@@ -17,7 +17,7 @@ class QueryTest extends PHPUnit_Framework_TestCase
 
     public function testQueryReturnsArrayByPointer()
     {
-        $data = [1, 2, 3, 4, 5];
+        $data = array(1, 2, 3, 4, 5);
 
         $statement = m::mock(AMonger\DBAL\Statement::class);
         $statement->shouldReceive('fetchAll')->andReturn($data);
@@ -30,9 +30,9 @@ class QueryTest extends PHPUnit_Framework_TestCase
 
     public function testAssertResultIsCorrectPosition()
     {
-        $data = [
-            ['name' => 'alan']
-        ];
+        $data = array(
+            array('name' => 'alan')
+        );
 
         $statement = m::mock(AMonger\DBAL\Statement::class);
         $statement->shouldReceive('fetchAll')->andReturn($data);
@@ -43,7 +43,7 @@ class QueryTest extends PHPUnit_Framework_TestCase
 
     public function testAssertGetNextResult()
     {
-        $data = [1, 2, 3, 4, 5];
+        $data = array(1, 2, 3, 4, 5);
 
         $statement = m::mock(AMonger\DBAL\Statement::class);
         $statement->shouldReceive('fetchAll')->andReturn($data);
@@ -54,7 +54,7 @@ class QueryTest extends PHPUnit_Framework_TestCase
 
     public function testGetCurrent()
     {
-        $data = [1, 2, 3, 4, 5];
+        $data = array(1, 2, 3, 4, 5);
 
         $statement = m::mock(AMonger\DBAL\Statement::class);
         $statement->shouldReceive('fetchAll')->andReturn($data);
@@ -65,7 +65,7 @@ class QueryTest extends PHPUnit_Framework_TestCase
 
     public function testCountResults()
     {
-        $data = [1, 2, 3, 4, 5];
+        $data = array(1, 2, 3, 4, 5);
 
         $statement = m::mock(AMonger\DBAL\Statement::class);
         $statement->shouldReceive('fetchAll')->andReturn($data);
