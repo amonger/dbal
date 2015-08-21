@@ -2,6 +2,7 @@
 
 namespace AMonger\DBAL\Adapter;
 
+use AMonger\DBAL\Statement;
 use Doctrine\DBAL\Driver\Connection;
 
 class DoctrineDBAL implements Statement
