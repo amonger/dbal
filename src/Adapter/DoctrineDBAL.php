@@ -1,8 +1,6 @@
 <?php
 
-
-namespace AMonger\Adapter;
-
+namespace AMonger\DBAL\Adapter;
 
 use AMonger\DBAL\Statement;
 
