@@ -2,13 +2,13 @@
 
 namespace AMonger\DBAL\Adapter;
 
-use AMonger\DBAL\Statement;
+use Doctrine\DBAL\Driver\Connection;
 
 class DoctrineDBAL implements Statement
 {
     protected $statement;
 
-    public function __construct(\Doctrine\DBAL\Statement $statement)
+    public function __construct(Connection $statement)
     {
         $this->statement = $statement;
     }
